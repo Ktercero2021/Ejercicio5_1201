@@ -33,6 +33,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2_columnas = new System.Windows.Forms.TextBox();
             this.btn_ejecutar = new System.Windows.Forms.Button();
+            this.listBox1_imprimir = new System.Windows.Forms.ListBox();
+            this.btn_limpiar = new System.Windows.Forms.Button();
+            this.btn_salir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -77,12 +80,43 @@
             this.btn_ejecutar.UseVisualStyleBackColor = true;
             this.btn_ejecutar.Click += new System.EventHandler(this.btn_ejecutar_Click);
             // 
+            // listBox1_imprimir
+            // 
+            this.listBox1_imprimir.FormattingEnabled = true;
+            this.listBox1_imprimir.Location = new System.Drawing.Point(231, 243);
+            this.listBox1_imprimir.Name = "listBox1_imprimir";
+            this.listBox1_imprimir.Size = new System.Drawing.Size(149, 134);
+            this.listBox1_imprimir.TabIndex = 5;
+            // 
+            // btn_limpiar
+            // 
+            this.btn_limpiar.Location = new System.Drawing.Point(403, 343);
+            this.btn_limpiar.Name = "btn_limpiar";
+            this.btn_limpiar.Size = new System.Drawing.Size(75, 34);
+            this.btn_limpiar.TabIndex = 6;
+            this.btn_limpiar.Text = "Limpiar";
+            this.btn_limpiar.UseVisualStyleBackColor = true;
+            this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
+            // 
+            // btn_salir
+            // 
+            this.btn_salir.Location = new System.Drawing.Point(493, 343);
+            this.btn_salir.Name = "btn_salir";
+            this.btn_salir.Size = new System.Drawing.Size(75, 34);
+            this.btn_salir.TabIndex = 7;
+            this.btn_salir.Text = "Salir";
+            this.btn_salir.UseVisualStyleBackColor = true;
+            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(580, 407);
+            this.Controls.Add(this.btn_salir);
+            this.Controls.Add(this.btn_limpiar);
+            this.Controls.Add(this.listBox1_imprimir);
             this.Controls.Add(this.btn_ejecutar);
             this.Controls.Add(this.textBox2_columnas);
             this.Controls.Add(this.label2);
@@ -102,6 +136,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2_columnas;
         private System.Windows.Forms.Button btn_ejecutar;
+        private System.Windows.Forms.ListBox listBox1_imprimir;
+        private System.Windows.Forms.Button btn_limpiar;
+        private System.Windows.Forms.Button btn_salir;
     }
 }
 

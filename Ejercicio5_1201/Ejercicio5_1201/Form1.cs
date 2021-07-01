@@ -32,10 +32,23 @@ namespace Ejercicio5_1201
 
                     matriz[filas, columna] = matrizAleatoria.Next(0, 100);
 
-                    MessageBox.Show("La posición es:" + filas + " , " + columna + " = " + matriz[filas, columna].ToString());
+                    listBox1_imprimir.Items.Add("La posición es:" + filas + " , " + columna + " = " + matriz[filas, columna].ToString());
                 }
 
             } 
+        }
+
+        private void btn_limpiar_Click(object sender, EventArgs e)
+        {
+            textBox1_filas.Clear();
+            textBox2_columnas.Clear();
+            listBox1_imprimir.Items.Clear();
+
+        }
+
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
